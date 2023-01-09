@@ -1,4 +1,4 @@
-## Timer ⏳
+## Timer ⏱
 
 This is a simple timer implemented in JavaScript.
 
