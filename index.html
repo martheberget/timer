@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="main.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timer</title>
   </head>
   <body>
-    <svg height="200" width="200">
-      <circle cx="30" cy="30" r="20" />
-    </svg>
-    <input class="duration" value="30" />
-    <button class="start">Start</button>
-    <button class="pause">Pause</button>
+    <div class="content">
+      <svg svg height="400" width="400">
+        <circle class="circle" cx="200" cy="200" r="190" transform="rotate(-90 200 200)" />
+      </svg>
+      <input class="duration" value="30" />
+      <button class="start">Start</button>
+      <button class="pause">Pause</button>
+    </div>
+
     <script src="timer.js"></script>
     <script src="index.js"></script>
   </body>
