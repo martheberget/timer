@@ -13,6 +13,14 @@ body {
   font: inherit;
 }
 
+#duration {
+  color: #ffb9b9;
+}
+
+.fa-solid {
+  color: #ffb9b9;
+}
+
 .container {
   justify-content: center;
   align-items: center;
