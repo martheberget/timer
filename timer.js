@@ -55,6 +55,3 @@ class Timer {
     this.durationInput.value = time.toFixed(2);
   }
 }
-
-// Start button is disabled during countdown until pause is clicked
-// Start button is available when countdown is finsihed
