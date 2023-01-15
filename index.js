@@ -1,8 +1,7 @@
-const durationInput = document.querySelector(".duration");
-const startButton = document.querySelector(".start");
-const pauseButton = document.querySelector(".pause");
-
-const circle = document.querySelector(".circle");
+const durationInput = document.querySelector("#duration");
+const startButton = document.querySelector("#start");
+const pauseButton = document.querySelector("#pause");
+const circle = document.querySelector("circle");
 
 const perimeter = 2 * Math.PI * circle.getAttribute("r");
 circle.setAttribute("stroke-dasharray", perimeter);
@@ -19,6 +18,6 @@ const timer = new Timer(durationInput, startButton, pauseButton, {
     circle.setAttribute("stroke-dashoffset", offset);
   },
   onComplete() {
-    console.log("On complete");
+    console.log("Done!");
   },
 });

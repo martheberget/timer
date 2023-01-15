@@ -17,11 +17,13 @@ class Timer {
     if (this.onStart) {
       this.onStart(this.timeRemaining);
     }
+    this.startButton.disabled = true;
     this.tick();
     this.interval = setInterval(this.tick, 20);
   };
 
   pause = () => {
+    this.startButton.disabled = false;
     clearInterval(this.interval);
   };
 
@@ -30,6 +32,7 @@ class Timer {
       this.pause();
       if (this.onComplete) {
         this.onComplete();
+        this.startButton.disabled = false;
       }
     } else {
       this.timeRemaining = this.timeRemaining - 0.02;
@@ -47,3 +50,6 @@ class Timer {
     this.durationInput.value = time.toFixed(2);
   }
 }
+
+// Start button is disabled during countdown until pause is clicked
+// Start button is available when countdown is finsihed
