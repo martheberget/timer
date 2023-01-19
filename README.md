@@ -4,7 +4,7 @@ This is a simple timer implemented in JavaScript.
 
 ## Credit
 
-This project was built following a tutorial by Stephen Grider from [The Modern JavaScript Bootcamp Course (2022)](https://www.udemy.com/course/javascript-beginners-complete-tutorial/). Copyright &copy; Stephen Grider, the original author of this design.
+This project was built following a tutorial by Stephen Grider from [The Modern JavaScript Bootcamp Course (2022)](https://www.udemy.com/course/javascript-beginners-complete-tutorial/). I've expanded on the prject by adding new features, fixing bugs and adding styling.
 
 ## Improvements
 
