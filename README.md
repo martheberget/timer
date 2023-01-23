@@ -9,4 +9,4 @@ This project was built following a tutorial by Stephen Grider from [The Modern J
 ## Improvements
 
 - Fixed a bug where the border would restart every time the timer was paused. Border will now continue the animation from where it was paused.
-- Added styling, colors, gradient background image etc.
+- Added styling, colors, and gradient background image.
