@@ -52,7 +52,7 @@ class Timer {
   reset = () => {
     if (this.onReset) {
       this.pause();
-      this.onReset(this.timeRemaining);
+      this.onReset();
     }
   };
 

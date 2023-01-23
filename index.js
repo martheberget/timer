@@ -33,8 +33,9 @@ const timer = new Timer(durationInput, startButton, pauseButton, {
     pauseTime = duration - timeRemaining;
   },
 
-  onReset(timeRemaining) {
-    durationInput.value = timeRemaining;
-    circle.setAttribute("stroke-dashoffset", 0);
+  onReset() {
+    durationInput.addEventListener("keydown", function () {
+      circle.setAttribute("stroke-dashoffset", 0);
+    });
   },
 });
