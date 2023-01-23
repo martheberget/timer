@@ -9,7 +9,6 @@ circle.setAttribute("stroke-dasharray", perimeter);
 let duration, pauseTime;
 let paused = 0; // False
 
-// Separating the timer from the border
 const timer = new Timer(durationInput, startButton, pauseButton, {
   onStart(totalDuration) {
     if (paused === 0) {
@@ -32,5 +31,10 @@ const timer = new Timer(durationInput, startButton, pauseButton, {
   onPause(timeRemaining) {
     paused = 1;
     pauseTime = duration - timeRemaining;
+  },
+
+  onReset(timeRemaining) {
+    durationInput.value = timeRemaining;
+    circle.setAttribute("stroke-dashoffset", 0);
   },
 });

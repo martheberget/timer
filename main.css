@@ -6,7 +6,7 @@ body {
   background-image: linear-gradient(to right, #ff9966, #ff5e62);
   background-size: contain;
   background-repeat: no-repeat;
-  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 * {
