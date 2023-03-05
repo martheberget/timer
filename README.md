@@ -8,6 +8,6 @@ This project was built following a tutorial by Stephen Grider from [The Modern J
 
 ## Improvements
 
-- When pausing the timer, by either clicking the "Pause"-button or clicking in the input field, the border will continue from where it was paused.
-- When changing the input field during countdown the border will restart from the top.
-- Added styling, colors, and gradient background image.
+- When pausing the timer the border will continue from where it was paused.
+- When changing the input field during countdown, the border will restart from the top.
+- Added styling and colors.

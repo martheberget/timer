@@ -53,6 +53,7 @@ class Timer {
     if (this.onReset) {
       this.pause();
       this.onReset();
+      //this.timeRemaining = this.durationInput;
     }
   };
 
@@ -64,3 +65,5 @@ class Timer {
     this.durationInput.value = time.toFixed(2);
   }
 }
+
+module.exports = Timer;

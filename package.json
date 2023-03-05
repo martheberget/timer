@@ -4,8 +4,16 @@
   "description": "This is a simple timer implemented in JavaScript.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node app.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsdom": "^21.1.0"
+  }
 }
