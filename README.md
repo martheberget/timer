@@ -5,12 +5,6 @@ This is a simple timer implemented in JavaScript.
 ## Build
 
 ```console
-npm init
-```
-
-Then
-
-```console
 npm run make
 ```
 
