@@ -9,6 +9,11 @@ circle.setAttribute("stroke-dasharray", perimeter);
 let duration, pauseTime;
 let paused = 0;
 
+playSound = () => {
+  let ding = new Audio("ding.mp3");
+  ding.play();
+};
+
 const timer = new Timer(durationInput, startButton, pauseButton, {
   onStart(totalDuration) {
     if (paused === 0) {
@@ -24,7 +29,7 @@ const timer = new Timer(durationInput, startButton, pauseButton, {
     circle.setAttribute("stroke-dashoffset", offset);
   },
   onComplete() {
-    console.log("Done!");
+    playSound();
     circle.setAttribute("stroke-dashoffset", 0);
     durationInput.value = duration;
   },
@@ -36,7 +41,6 @@ const timer = new Timer(durationInput, startButton, pauseButton, {
   onReset() {
     durationInput.addEventListener("keydown", function () {
       circle.setAttribute("stroke-dashoffset", 0);
-      console.log("Reset");
     });
   },
 });
