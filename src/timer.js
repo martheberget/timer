@@ -38,7 +38,7 @@ class Timer {
     if (this.timeRemaining <= 0) {
       this.pause();
       if (this.onComplete) {
-        this.onComplete();
+        this.onComplete(this.playSound);
         this.startButton.disabled = false;
       }
     } else {
@@ -54,6 +54,11 @@ class Timer {
       this.pause();
       this.onReset();
     }
+  };
+
+  playSound = () => {
+    let ding = new Audio("ding.mp3");
+    ding.play();
   };
 
   get timeRemaining() {

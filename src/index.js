@@ -9,11 +9,6 @@ circle.setAttribute("stroke-dasharray", perimeter);
 let duration, pauseTime;
 let paused = 0;
 
-playSound = () => {
-  let ding = new Audio("ding.mp3");
-  ding.play();
-};
-
 const timer = new Timer(durationInput, startButton, pauseButton, {
   onStart(totalDuration) {
     if (paused === 0) {
@@ -28,7 +23,7 @@ const timer = new Timer(durationInput, startButton, pauseButton, {
     offset = (perimeter * timeRemaining) / duration - perimeter;
     circle.setAttribute("stroke-dashoffset", offset);
   },
-  onComplete() {
+  onComplete(playSound) {
     playSound();
     circle.setAttribute("stroke-dashoffset", 0);
     durationInput.value = duration;
