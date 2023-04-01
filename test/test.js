@@ -1,6 +1,6 @@
 const assert = require("assert");
 const { JSDOM } = require("jsdom");
-const Timer = require("./public/timer");
+const Timer = require("../src/timer");
 
 describe("Timer", function () {
   let timer;
