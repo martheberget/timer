@@ -2,12 +2,22 @@
 
 This is a simple timer implemented in JavaScript.
 
+## Build
+
+```console
+npm init
+```
+
+Then
+
+```console
+npm run make
+```
+
 ## Credit
 
-This project was built following a tutorial by Stephen Grider from [The Modern JavaScript Bootcamp Course (2022)](https://www.udemy.com/course/javascript-beginners-complete-tutorial/). I've expanded on the project by fixing bugs and adding styling.
+Inspired by Stephen Grider from [The Modern JavaScript Bootcamp Course (2022)](https://www.udemy.com/course/javascript-beginners-complete-tutorial/). This project was created solely for the purpose of practicing coding skills and learning new technologies.
 
 ## Improvements
 
-- When pausing the timer the border will continue from where it was paused.
-- When changing the input field during countdown, the border will restart from the top.
-- Added styling and colors.
+I've expanded on the project by adding reset functionality, styling, unit tests using Mocha, and routing with Express.js.

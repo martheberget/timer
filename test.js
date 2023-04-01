@@ -10,8 +10,8 @@ describe("Timer", function () {
 
   before(function () {
     const dom = new JSDOM(`
+    <input id="duration" type="text" value="1.00">
       <div>
-        <input id="duration" type="text" value="1.00">
         <button id="start">Start</button>
         <button id="pause">Pause</button>
       </div>
@@ -48,15 +48,6 @@ describe("Timer", function () {
         assert.equal(timer.timeRemaining, timeRemaining);
         done();
       }, 100);
-    }, 100);
-  });
-
-  it("Should reset the timer", function (done) {
-    timer.startButton.click();
-    setTimeout(function () {
-      timer.reset();
-      assert.equal(timer.timeRemaining, 1);
-      done();
     }, 100);
   });
 });

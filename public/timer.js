@@ -53,7 +53,6 @@ class Timer {
     if (this.onReset) {
       this.pause();
       this.onReset();
-      //this.timeRemaining = this.durationInput;
     }
   };
 
