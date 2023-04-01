@@ -20,4 +20,4 @@ Inspired by Stephen Grider from [The Modern JavaScript Bootcamp Course (2022)](h
 
 ## Improvements
 
-I've expanded on the project by adding reset functionality, styling, unit tests using Mocha, and routing with Express.js.
+I've expanded on the project by adding timer reset functionality, styling, unit tests using Mocha, and routing with Express.js.
