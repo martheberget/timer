@@ -4,6 +4,9 @@ This is a simple timer implemented in JavaScript.
 
 ## Build
 
+**Prerequisites**
+_Node.js and NPM must be installed_
+
 Run `npm install` to install project dependencies. Then `npm run make` to get the app running on local host.
 Timer will be displayed on http://localhost:3000
 
