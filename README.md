@@ -4,9 +4,8 @@ This is a simple timer implemented in JavaScript.
 
 ## Build
 
-```console
-npm run make
-```
+Run `npm install` to install project dependencies. Then `npm run make` to get the app running on local host.
+Timer will be displayed on http://localhost:3000
 
 ## Credit
 
