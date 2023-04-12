@@ -2,6 +2,8 @@
 
 This is a simple timer implemented in JavaScript.
 
+![](timer.gif)
+
 ## Build
 
 **Prerequisites**<br>
