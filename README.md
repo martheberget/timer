@@ -2,7 +2,7 @@
 
 This is a simple timer implemented in JavaScript.
 
-![](timerv2.gif)
+![](timer.gif)
 
 ## Build
 
